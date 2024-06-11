@@ -21,7 +21,7 @@ This project demonstrates image compression and reconstruction using a sparse au
 
 3. Run the main script to train the model and visualize results:
     ```
-    python main.py
+    python train.py
     ```
 
 ## Description
