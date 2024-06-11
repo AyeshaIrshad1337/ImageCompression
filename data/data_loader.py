@@ -6,8 +6,8 @@ def load_images(path, target_size):
     images=[]
     ext=['jpg','jpeg','png']
     for filename in os.listdir(path):
-        if filename.endwswith(tuple(ext)):
-            img=load_img(os.path.join(path,filename),target_size=target_size,color='grayscale')
+        if filename.endswith(".png") or filename.endswith(".jpg"):
+            img=load_img(os.path.join(path,filename),target_size=target_size,color_mode='grayscale')
             img=img_to_array(img)/255.0
             images.append(img)
     return np.array(images)
